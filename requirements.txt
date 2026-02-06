@@ -1,0 +1,9 @@
+
+langchain 
+langchain-core 
+langchain-community 
+langchain-groq 
+qdrant-client 
+fastembed 
+numpy 
+
