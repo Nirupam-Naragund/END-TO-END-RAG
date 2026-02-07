@@ -29,7 +29,7 @@ A high-performance RAG pipeline that leverages Llama 3.1 (via Groq), Qdrant for 
 ##  Features
 
 
-- ** Triple-Hybrid Retrieval:
+** Triple-Hybrid Retrieval:
 
 - ** Dense: BGE-Small-en-v1.5 for broad semantic meaning.
 
