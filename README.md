@@ -31,17 +31,17 @@ A high-performance RAG pipeline that leverages Llama 3.1 (via Groq), Qdrant for 
 
 * Triple-Hybrid Retrieval:
 
-- ** Dense: BGE-Small-en-v1.5 for broad semantic meaning.
+* Dense: BGE-Small-en-v1.5 for broad semantic meaning.
 
-- ** Sparse: Splade PP for exact keyword matching.
+* Sparse: Splade PP for exact keyword matching.
 
-- ** ColBERT: Late interaction multi-vector retrieval for high-precision ranking.
+* ColBERT: Late interaction multi-vector retrieval for high-precision ranking.
 
-- ** Semantic Caching: Powered by RedisVL, reducing LLM costs and latency by caching semantically similar queries.
+* Semantic Caching: Powered by RedisVL, reducing LLM costs and latency by caching semantically similar queries.
 
-- ** Fast Inference: Integrated with Groq for ultra-fast Llama 3.1 generation.
+* Fast Inference: Integrated with Groq for ultra-fast Llama 3.1 generation.
 
-- ** Multi-format Support: Automated ingestion for .pdf, .docx, .txt.
+* Multi-format Support: Automated ingestion for .pdf, .docx, .txt.
 
 
 ---
@@ -63,13 +63,13 @@ A high-performance RAG pipeline that leverages Llama 3.1 (via Groq), Qdrant for 
 
 ###  Prerequisites
 
-- ** Python: 3.9+
+* Python: 3.9+
 
-- ** Qdrant: Running locally at http://localhost:6333 (or Docker).
+* Qdrant: Running locally at http://localhost:6333 (or Docker).
 
-- ** Redis: Running locally at redis://localhost:6379.
+* Redis: Running locally at redis://localhost:6379.
 
-- ** API Keys: A Groq Cloud API Key.
+* API Keys: A Groq Cloud API Key.
 
 
 ###  Installation
