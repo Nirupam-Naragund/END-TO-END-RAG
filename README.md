@@ -14,49 +14,35 @@
 </p>
 <br>
 
-##  Table of Contents
 
-- [ Overview](#-overview)
-- [ Features](#-features)
-- [ Project Structure](#-project-structure)
-  - [ Project Index](#-project-index)
-- [ Getting Started](#-getting-started)
-  - [ Prerequisites](#-prerequisites)
-  - [ Installation](#-installation)
-  - [ Usage](#-usage)
-  - [ Testing](#-testing)
-- [ Project Roadmap](#-project-roadmap)
-- [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
 
 ---
 
 ##  Overview
 
-<code>❯
+
 A high-performance RAG pipeline that leverages Llama 3.1 (via Groq), Qdrant for multi-vector hybrid search, and Redis for semantic caching. This architecture is designed to handle complex queries by combining the semantic depth of dense embeddings, the keyword precision of sparse vectors (SPLADE), and the token-level nuance of ColBERT.
-</code>
+
 
 ---
 
 ##  Features
 
-<code>❯ 
-Triple-Hybrid Retrieval:
 
-Dense: BGE-Small-en-v1.5 for broad semantic meaning.
+- ** Triple-Hybrid Retrieval:
 
-Sparse: Splade PP for exact keyword matching.
+- ** Dense: BGE-Small-en-v1.5 for broad semantic meaning.
 
-ColBERT: Late interaction multi-vector retrieval for high-precision ranking.
+- ** Sparse: Splade PP for exact keyword matching.
 
-Semantic Caching: Powered by RedisVL, reducing LLM costs and latency by caching semantically similar queries.
+- ** ColBERT: Late interaction multi-vector retrieval for high-precision ranking.
 
-Fast Inference: Integrated with Groq for ultra-fast Llama 3.1 generation.
+- ** Semantic Caching: Powered by RedisVL, reducing LLM costs and latency by caching semantically similar queries.
 
-Multi-format Support: Automated ingestion for .pdf, .docx, .txt, .md, and .html.
-</code>
+- ** Fast Inference: Integrated with Groq for ultra-fast Llama 3.1 generation.
+
+- ** Multi-format Support: Automated ingestion for .pdf, .docx, .txt.
+
 
 ---
 
@@ -71,38 +57,19 @@ Multi-format Support: Automated ingestion for .pdf, .docx, .txt, .md, and .html.
 ```
 
 
-###  Project Index
-<details open>
-	<summary><b><code>END-TO-END-RAG/</code></b></summary>
-	<details> <!-- __root__ Submodule -->
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<table>
-			<tr>
-				<td><b><a href='https://github.com/Nirupam-Naragund/END-TO-END-RAG/blob/master/main.py'>main.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/Nirupam-Naragund/END-TO-END-RAG/blob/master/requirements.txt'>requirements.txt</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			</table>
-		</blockquote>
-	</details>
-</details>
 
 ---
 ##  Getting Started
 
 ###  Prerequisites
 
-Python: 3.9+
+- ** Python: 3.9+
 
-Qdrant: Running locally at http://localhost:6333 (or Docker).
+- ** Qdrant: Running locally at http://localhost:6333 (or Docker).
 
-Redis: Running locally at redis://localhost:6379.
+- ** Redis: Running locally at redis://localhost:6379.
 
-API Keys: A Groq Cloud API Key.
+- ** API Keys: A Groq Cloud API Key.
 
 
 ###  Installation
@@ -138,7 +105,7 @@ Run END-TO-END-RAG using the following command:
 **Using `pip`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
 
 ```sh
-❯ python {entrypoint}
+❯ python main.py
 ```
 
 
