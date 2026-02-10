@@ -152,11 +152,7 @@ Run END-TO-END-RAG using the following command:
 
 ---
 
-##  License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
 
 ##  Acknowledgments
 
